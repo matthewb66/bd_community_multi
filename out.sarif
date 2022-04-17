@@ -1,0 +1,62 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck",
+                    "organization": "Synopsys",
+                    "version": "1.0",
+                    "rules": [
+                        {
+                            "id": "Newtonsoft.Json",
+                            "shortDescription": {
+                                "text": "The direct dependency Newtonsoft.Json/12.0.3 has 1 vulnerabilities (max score 6.7)."
+                            },
+                            "fullDescription": {
+                                "text": "The direct dependency Newtonsoft.Json/12.0.3 has 1 vulnerabilities (max score 6.7).\n\nList of direct vulnerabilities:\nBDSA-2018-5195"
+                            },
+                            "help": {
+                                "text": "",
+                                "markdown": "The direct dependency Newtonsoft.Json/12.0.3 has 1 vulnerabilities (max score 6.7).\n\n\n| Parent | Child Component | Vulnerability | Score |  Policy Violated | Description | Current Ver |\n| --- | --- | --- | --- | --- | --- | --- |\n| -/- | Newtonsoft.Json/12.0.3 | <a href=\"https://poc39.blackduck.synopsys.com/api/vulnerabilities/BDSA-2018-5195/overview\" target=\"_blank\">BDSA-2018-5195</a> | 6.7 | Vulnerabilities | Newtonsoft.Json is vulnerable to denial-of-service (DoS) due to a stack overflow that can occur whenever nested objects are being processed. A remote attacker could cause a vulnerable application  ... |\n\n\nRecommended to upgrade to version 13.0.1.\n\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning"
+                            },
+                            "properties": {
+                                "tags": [
+                                    "security"
+                                ],
+                                "security-severity": "6.7"
+                            }
+                        }
+                    ]
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "Newtonsoft.Json",
+                    "message": {
+                        "text": "The direct dependency Newtonsoft.Json/12.0.3 has 1 vulnerabilities (max score 6.7)."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "src/Compatibility/ControlGallery/test/WinUI.UITests/WinUI.UITests.csproj"
+                                },
+                                "region": {
+                                    "startLine": 20
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "3d9d879fc3b5b3023a328d60772c89b96c544c8d183b63915435f7cc"
+                    }
+                }
+            ]
+        }
+    ]
+}

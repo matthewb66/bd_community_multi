@@ -1,0 +1,15 @@
+{
+  "name": "npm-forever",
+  "private": true,
+  "version": "1.3.0",
+  "description": "A tool to learn OWASP Top 10 for node.js developers",
+  "main": "server.js",
+  "dependencies": {
+    "forever": "^2.0.0"
+  },
+  "comments": {
+    "//": "a9 insecure components"
+  },
+  "repository": "https://github.com/OWASP/NodejsGoat",
+  "license": "Apache 2.0"
+}
